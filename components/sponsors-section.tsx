@@ -27,7 +27,7 @@ export function SponsorsSection() {
   // Sponsor logos
   const sponsors = [
     {
-      name: "PHDCCI",
+      namee: "ORGANIZER",
       image: "/phdcci-logo.png",
       size: "large",
     },
@@ -44,7 +44,7 @@ export function SponsorsSection() {
     {
       name: "STPI",
       image: "/STPI.png?height=100&width=200&text=AI+Defense+Systems&bg=4169E1&color=white",
-      size: "medium",
+      size: "small",
     },
     {
       name: "Cyber Crop",
@@ -59,7 +59,7 @@ export function SponsorsSection() {
     {
       name: "Rozana",
       image: "/RozanaL.png?height=100&width=200&text=ThreatShield&bg=3730a3&color=white",
-      size: "medium",
+      size: "small",
     },
     {
       name: "AI Innovations",
@@ -165,6 +165,8 @@ export function SponsorsSection() {
                         height={sponsor.size === "large" ? 250 : 90}
                         className="object-contain transition-transform duration-500 group-hover:scale-110 max-h-35 md:max-h-50"
                       />
+
+                      <h3 className="text-xxl font-semibold text-center mt-6 text-white ">{sponsor.namee}</h3>
                     </div>
 
                     {/* Subtle shine effect */}

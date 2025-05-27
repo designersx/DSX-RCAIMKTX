@@ -73,7 +73,7 @@ export function AboutSection() {
               variants={itemVariants}
               className="lg:col-span-7 relative"
             >
-              <div className="h-full backdrop-blur-sm bg-white/80 rounded-2xl shadow-xl p-8 border border-gray-100 overflow-hidden">
+              <div className="h-full backdrop-blur-sm bg-white/80  p-8 border border-gray-100 overflow-hidden">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-[#0088cc]/5 rounded-full -translate-y-1/2 translate-x-1/2 animate-pulse"></div>
 
                 <h3 className="text-2xl font-bold text-gray-900 mb-6 relative">
@@ -125,7 +125,7 @@ export function AboutSection() {
               variants={itemVariants}
               className="lg:col-span-5 relative"
             >
-              <div className="h-full backdrop-blur-sm bg-white/80 rounded-2xl shadow-xl p-8 border border-gray-100 overflow-hidden">
+              <div className="h-full backdrop-blur-sm bg-white/80  p-8 border border-gray-100 overflow-hidden">
                 <div className="absolute bottom-0 left-0 w-40 h-40 bg-[#0088cc]/5 rounded-full translate-y-1/2 -translate-x-1/2 animate-pulse"></div>
 
                 <h3 className="text-2xl font-bold text-gray-900 mb-6 relative">
