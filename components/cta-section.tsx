@@ -250,7 +250,7 @@ export function CTASection() {
 
               <p className="text-sm text-gray-500 mt-4 text-center">
                 For group bookings or any queries, please contact us at{" "}
-                <span className="text-[#0088cc]">events@phdcci.in</span>
+                <span className="text-[#0088cc]">rcaconference2025@gmail.com</span>
               </p>
             </form>
           </motion.div>

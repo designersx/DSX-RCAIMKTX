@@ -307,7 +307,7 @@ export function RegistrationSection() {
                 <div className="text-center bg-gray-50 p-4 rounded-xl">
                   <p className="text-sm text-gray-600">
                     For group bookings or any queries, please contact us at{" "}
-                    <span className="text-[#0088cc] font-medium">events@phdcci.in</span>
+                    <span className="text-[#0088cc] font-medium">rcaconference2025@gmail.com</span>
                   </p>
                 </div>
               </form>

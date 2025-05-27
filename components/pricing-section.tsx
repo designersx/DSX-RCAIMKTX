@@ -149,10 +149,10 @@ export function PricingSection() {
                   {/* Highlight badge */}
                   {tier.highlight && (
                     <div className="absolute top-6 right-6">
-                      <div className="flex items-center space-x-1 bg-gradient-to-r from-[#0088cc] to-blue-500 px-3 py-1 rounded-full text-xs font-medium text-white shadow-lg">
+                      {/* <div className="flex items-center space-x-1 bg-gradient-to-r from-[#0088cc] to-blue-500 px-3 py-1 rounded-full text-xs font-medium text-white shadow-lg">
                         <Sparkles className="h-3 w-3 mr-1" />
                         <span>Popular Choice</span>
-                      </div>
+                      </div> */}
                     </div>
                   )}
 
@@ -208,7 +208,7 @@ export function PricingSection() {
               <h3 className="text-xl font-semibold text-white mb-3">Group Discounts</h3>
               <p className="text-blue-100">
                 Special discounts are available for groups of 5 or more attendees from the same organization. Contact us
-                at <span className="text-[#0088cc] font-medium">events@phdcci.in</span> for more information.
+                at <span className="text-[#0088cc] font-medium">rcaconference2025@gmail.com</span> for more information.
               </p>
             </div>
           </motion.div>

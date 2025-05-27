@@ -27,7 +27,7 @@ export function SponsorsSection() {
   // Sponsor logos
   const sponsors = [
     {
-      namee: "ORGANIZER",
+      namee: "Organized By",
       image: "/phdcci-logo.png",
       size: "large",
     },
@@ -166,7 +166,7 @@ export function SponsorsSection() {
                         className="object-contain transition-transform duration-500 group-hover:scale-110 max-h-35 md:max-h-50"
                       />
 
-                      <h3 className="text-4xl font-semibold text-center mt-6 text-white ">{sponsor.namee}</h3>
+                      <h3 className="text-5xl font-semibold text-center mt-6 text-white ">{sponsor.namee}</h3>
                     </div>
 
                     {/* Subtle shine effect */}
