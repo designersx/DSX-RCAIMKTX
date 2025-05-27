@@ -36,50 +36,81 @@ export function SpeakersSection() {
 
   const speakers = [
     {
-      name: "Dr. Aisha Patel",
-      role: "Chief Security Officer, TechSecure",
-      image: "/placeholder.svg?height=400&width=300&text=Professional+Woman+Cybersecurity+Expert",
-      topic: "AI-Driven Threat Detection",
+      name: "Ms. Geetanjali Khandelwal, IPS",
+      role: "SP- Cyber Crime, Chandigarh Police",
+      image: "/geetanjali,IPS.jpg?height=400&width=300&text=Professional+Woman+Cybersecurity+Expert",
+      topic: "Cyber Law Enforcement: Strategy,",
       icon: Brain,
       color: "from-purple-500 to-blue-600",
     },
     {
-      name: "Rajiv Sharma",
-      role: "SP - Cyber Crime, Punjab Police",
-      image: "/placeholder.svg?height=400&width=300&text=Indian+Police+Officer+Cybersecurity",
-      topic: "Cyber Law Enforcement: Strategy & Challenges",
-      icon: Scale,
-      color: "from-blue-500 to-cyan-600",
+      name: "Sh. Deepak Saharan, IPS",
+      role: "SP- Cyber Crime Cell, Haryana Police",
+      image: "/Deepak-Sharan-IPS.jpg?height=400&width=300&text=Indian+Police+Officer+Cybersecurity",
+      topic: "Cyber Law Enforcement: Strategy",
+    
     },
     {
-      name: "Sarah Johnson",
-      role: "AI Ethics Researcher, Global Tech",
-      image: "/placeholder.svg?height=400&width=300&text=Professional+Woman+AI+Researcher",
-      topic: "Ethical Considerations in AI",
+      name: "Mr. Tarun Malhotra",
+      role: "Founder & MD, CyberCops",
+      image: "/Tarun-Malhotra.jpg?height=400&width=300&text=Professional+Woman+AI+Researcher",
+      topic: "Cyber Threat Landscape: Trends, Tactics",
       icon: Shield,
       color: "from-indigo-500 to-purple-600",
     },
     {
-      name: "Dr. Vikram Mehta",
-      role: "Professor, Cybersecurity Institute",
-      image: "/placeholder.svg?height=400&width=300&text=Indian+Professor+Cybersecurity+Expert",
-      topic: "Next-Gen Security Frameworks",
+      name: "Mr. Manish Trehan",
+      role: "Producer, Jamtara Web Series on Netflix",
+      image: "/ManishTrehan-jamtara.png?height=400&width=300&text=Indian+Professor+Cybersecurity+Expert",
+      topic: "Fireside Chat: Reel to Real Behind The Scam",
       icon: Lock,
       color: "from-cyan-500 to-blue-600",
     },
     {
-      name: "Lisa Chen",
-      role: "CTO, Neural Systems Inc.",
-      image: "/placeholder.svg?height=400&width=300&text=Asian+Woman+Tech+Executive",
-      topic: "Quantum Computing & Security Implications",
+      name: "To Be Announced",
+      role: "To Be Announced.",
+      image: "/Coming-Soon.jpg?height=400&width=300&text=Asian+Woman+Tech+Executive",
+      topic: "To Be Announced",
       icon: Network,
       color: "from-violet-500 to-purple-600",
     },
     {
-      name: "Michael Okonjo",
-      role: "Director of Threat Intelligence, SecureNet",
-      image: "/placeholder.svg?height=400&width=300&text=African+Man+Cybersecurity+Director",
-      topic: "Emerging Threat Landscapes",
+      name: "To Be Announced",
+      role: "To Be Announced",
+      image: "/Coming-Soon.jpg?height=400&width=300&text=African+Man+Cybersecurity+Director",
+      topic: "To Be Announced",
+      icon: Zap,
+      color: "from-blue-500 to-indigo-600",
+    },
+    {
+      name: "To Be Announced",
+      role: "To Be Announced.",
+      image: "/Coming-Soon.jpg?height=400&width=300&text=Asian+Woman+Tech+Executive",
+      topic: "To Be Announced",
+      icon: Network,
+      color: "from-violet-500 to-purple-600",
+    },
+    {
+      name: "To Be Announced",
+      role: "To Be Announced",
+      image: "/Coming-Soon.jpg?height=400&width=300&text=African+Man+Cybersecurity+Director",
+      topic: "To Be Announced",
+      icon: Zap,
+      color: "from-blue-500 to-indigo-600",
+    },,
+    {
+      name: "To Be Announced",
+      role: "To Be Announced.",
+      image: "/Coming-Soon.jpg?height=400&width=300&text=Asian+Woman+Tech+Executive",
+      topic: "To Be Announced",
+      icon: Network,
+      color: "from-violet-500 to-purple-600",
+    },
+    {
+      name: "To Be Announced",
+      role: "To Be Announced",
+      image: "/Coming-Soon.jpg?height=400&width=300&text=African+Man+Cybersecurity+Director",
+      topic: "To Be Announced",
       icon: Zap,
       color: "from-blue-500 to-indigo-600",
     },
@@ -116,7 +147,7 @@ export function SpeakersSection() {
 
           <motion.div
             variants={containerVariants}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-4"
           >
             {speakers.map((speaker, index) => (
               <motion.div
@@ -144,23 +175,23 @@ export function SpeakersSection() {
                     {/* Topic badge */}
                     <div className="absolute bottom-4 left-4 z-20 max-w-[80%]">
                       <div className="flex items-center space-x-2 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm px-3 py-1.5 rounded-full">
-                        <div
+                        {/* <div
                           className={`w-6 h-6 rounded-full bg-gradient-to-br ${speaker.color} flex items-center justify-center`}
                         >
                           <speaker.icon className="w-3.5 h-3.5 text-white" />
-                        </div>
-                        <span className="text-xs font-medium truncate">{speaker.topic}</span>
+                        </div> */}
+                        <span className="text-xs font-medium truncate"> {speaker.topic}</span>
                       </div>
                     </div>
                   </div>
 
                   {/* Speaker info */}
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">{speaker.name}</h3>
-                    <p className="text-[#0088cc] dark:text-[#4db8ff] text-sm mb-4">{speaker.role}</p>
+                  <div className="p-4">
+                    <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">{speaker.name}</h3>
+                    <p className="text-[#0088cc] dark:text-[#4db8ff] text-sm ">{speaker.role}</p>
 
                     {/* Animated button on hover */}
-                    <div className="overflow-hidden h-8">
+                    {/* <div className="overflow-hidden h-8">
                       <div className="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
                         <button className="text-sm font-medium text-white bg-gradient-to-r from-[#0088cc] to-[#005580] px-4 py-1.5 rounded-full flex items-center space-x-1">
                           <span>View Profile</span>
@@ -169,7 +200,7 @@ export function SpeakersSection() {
                           </svg>
                         </button>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </motion.div>

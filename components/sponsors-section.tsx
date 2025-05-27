@@ -33,7 +33,7 @@ export function SponsorsSection() {
     },
     {
       name: "Punjab Police",
-      image: "/placeholder.svg?height=100&width=200&text=Punjab+Police+Logo&bg=1a365d&color=white",
+      image: "/Punjab-Police.png?height=100&width=200&text=Punjab+Police+Logo&bg=1a365d&color=white",
       size: "medium",
     },
     {
@@ -161,8 +161,8 @@ export function SponsorsSection() {
                       <Image
                         src={sponsor.image || "/placeholder.svg"}
                         alt={sponsor.name}
-                        width={sponsor.size === "large" ? 240 : 180}
-                        height={sponsor.size === "large" ? 120 : 90}
+                        width={sponsor.size === "large" ? 580 : 180}
+                        height={sponsor.size === "large" ? 250 : 90}
                         className="object-contain transition-transform duration-500 group-hover:scale-110 max-h-16 md:max-h-20"
                       />
                     </div>

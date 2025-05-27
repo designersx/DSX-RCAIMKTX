@@ -407,11 +407,11 @@ export function AnimatedHeroSection() {
           <div className="flex justify-between items-center">
             <div className="flex items-center">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Rca%20Logo-8Qmf8Pevbjv5t8FWMvW83Rin9Ls08S.png"
+                src="/RCA_WHITE_LOGO.jpg"
                 alt="RCA Logo"
                 width={100}
                 height={40}
-                className="sm:w-[120px] invert"
+                className="sm:w-[120px]"
               />
             </div>
 
@@ -419,7 +419,7 @@ export function AnimatedHeroSection() {
             <nav className="hidden md:flex items-center space-x-8">
               {[
                 { name: "HOME", section: "hero" },
-                { name: "ABOUT", section: "about" },
+                { name: "AGENDA", section: "about" },
                 { name: "SPEAKERS", section: "speakers" },
                 { name: "SPONSORS", section: "sponsors" },
                 { name: "PRICING", section: "pricing" },
@@ -489,7 +489,7 @@ export function AnimatedHeroSection() {
               <nav className="flex flex-col space-y-4">
                 {[
                   { name: "HOME", section: "hero" },
-                  { name: "ABOUT", section: "about" },
+                  { name: "AGENDA", section: "about" },
                   { name: "SPEAKERS", section: "speakers" },
                   { name: "SPONSORS", section: "sponsors" },
                   { name: "PRICING", section: "pricing" },
@@ -576,7 +576,7 @@ export function AnimatedHeroSection() {
             </motion.div>
 
             <motion.h1
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight"
+              className="text-3xl sm:text-3xl md:text-6xl lg:text-7xl font-bold text-white leading-tight"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
@@ -587,7 +587,7 @@ export function AnimatedHeroSection() {
                 transition={{ delay: 0.6, duration: 0.5 }}
                 whileHover={{ textShadow: "0 0 20px rgba(0, 136, 204, 0.8)" }}
               >
-                REGIONAL
+                REGIONAL &nbsp;
               </motion.span>
               <br className="hidden sm:block" />
               <motion.span
@@ -686,11 +686,8 @@ export function AnimatedHeroSection() {
               transition={{ delay: 2, duration: 0.8 }}
             >
               <motion.div
-                whileHover={{
-                  scale: 1.1,
-                  boxShadow: "0 0 30px rgba(0, 136, 204, 0.6)",
-                }}
-                whileTap={{ scale: 0.95 }}
+               
+               
               >
                 <Button
                   className="bg-[#0088cc] hover:bg-[#0088cc]/80 text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-full transition-all duration-300"
