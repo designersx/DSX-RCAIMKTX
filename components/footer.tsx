@@ -49,7 +49,16 @@ export function Footer() {
                   href="#about"
                   className="text-gray-400 hover:text-white transition-colors duration-300 text-sm sm:text-base hover:translate-x-1 transform"
                 >
-                  AGENDA
+                  About
+                </a>
+              </li>
+
+                <li>
+                <a
+                  href="#about"
+                  className="text-gray-400 hover:text-white transition-colors duration-300 text-sm sm:text-base hover:translate-x-1 transform"
+                >
+                  Agenda
                 </a>
               </li>
               <li>

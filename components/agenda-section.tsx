@@ -156,7 +156,7 @@ export function AgendaSection() {
   }
 
   return (
-    <section className="w-full py-24 relative overflow-hidden bg-gradient-to-b from-white to-gray-50" id="agenda">
+    <section className="w-full py-0 relative overflow-hidden bg-gradient-to-b from-white to-gray-50" id="agenda">
       {/* Background Pattern */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-timeline-pattern opacity-5"></div>

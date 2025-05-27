@@ -419,7 +419,8 @@ export function AnimatedHeroSection() {
             <nav className="hidden md:flex items-center space-x-8">
               {[
                 { name: "HOME", section: "hero" },
-                { name: "AGENDA", section: "about" },
+                { name: "ABOUT", section: "about" },
+                { name: "AGENDA", section: "agenda" },
                 { name: "SPEAKERS", section: "speakers" },
                 { name: "SPONSORS", section: "sponsors" },
                 { name: "PRICING", section: "pricing" },
@@ -489,7 +490,8 @@ export function AnimatedHeroSection() {
               <nav className="flex flex-col space-y-4">
                 {[
                   { name: "HOME", section: "hero" },
-                  { name: "AGENDA", section: "about" },
+                  { name: "ABOUT", section: "about" },
+                  { name: "AGENDA", section: "agenda" },
                   { name: "SPEAKERS", section: "speakers" },
                   { name: "SPONSORS", section: "sponsors" },
                   { name: "PRICING", section: "pricing" },

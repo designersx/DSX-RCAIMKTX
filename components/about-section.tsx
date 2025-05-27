@@ -62,7 +62,7 @@ export function AboutSection() {
         >
           <motion.div variants={itemVariants} className="text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              AGENDA
+            About
             </h2>
             <div className="w-24 h-1 bg-[#0088cc] mx-auto"></div>
           </motion.div>
