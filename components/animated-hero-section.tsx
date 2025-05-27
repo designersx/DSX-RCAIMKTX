@@ -250,7 +250,7 @@ export function AnimatedHeroSection() {
 
   return (
     <section
-      className="relative min-h-screen w-full  overflow-hidden bg-[#050A1C]"
+      className="relative min-h-screen w-full  overflow-hidden bg-[#050a1c3d]"
       id="hero"
     >
       <div className="relative z-[-100]">
@@ -390,8 +390,8 @@ export function AnimatedHeroSection() {
       </div>
 
       {/* Gradient overlays for depth */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#050A1C]/80 via-transparent to-[#050A1C]/80"></div>
-      <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#050A1C]/80 via-transparent to-[#050A1C]/80">
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#050a1c3d]/80 via-transparent to-[#050a1c3d]/80"></div>
+      <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#050a1c3d]/80 via-transparent to-[#050a1c3d]/80">
         {" "}
       </div>
 
@@ -399,7 +399,7 @@ export function AnimatedHeroSection() {
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           isScrolled || mobileMenuOpen
-            ? "bg-[#050A1C]/90 backdrop-blur-md shadow-lg py-2"
+            ? "bg-[#050a1c3d]/90 backdrop-blur-md shadow-lg py-2"
             : "bg-transparent py-4"
         }`}
       >
@@ -483,7 +483,7 @@ export function AnimatedHeroSection() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-[#050A1C]/95 backdrop-blur-md shadow-lg"
+            className="md:hidden bg-[#050a1c3d]/95 backdrop-blur-md shadow-lg"
           >
             <div className="container mx-auto px-4 py-4">
               <nav className="flex flex-col space-y-4">
