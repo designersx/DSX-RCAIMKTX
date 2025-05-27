@@ -9,11 +9,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Rca%20Logo-8Qmf8Pevbjv5t8FWMvW83Rin9Ls08S.png"
+              src="/RCA_WHITE_LOGO.jpg"
               alt="RCA Logo"
               width={120}
               height={50}
-              className="mb-4 brightness-0 invert"
+              className="mb-4 "
             />
             <p className="text-gray-400 text-sm sm:text-base">
               Regional Cybersecurity & AI Conference 2025 - Bringing together experts and professionals to discuss the

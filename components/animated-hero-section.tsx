@@ -521,7 +521,7 @@ export function AnimatedHeroSection() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1.5, duration: 0.5 }}
-        className="fixed bottom-6 right-6 z-40"
+        className="fixed bottom-10 right-6 z-40"
       >
         <motion.div
           className="bg-[#0A1A3A]/80 backdrop-blur-md p-3 rounded-full border border-[#0088cc]/20 shadow-lg hover:shadow-[#0088cc]/20 transition-all duration-300"
@@ -546,7 +546,7 @@ export function AnimatedHeroSection() {
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-2 text-white hover:text-[#0088cc] transition-colors"
+            className="flex items-center space-x-2 text-white hover:text-[#0088cc] transition-colors "
             aria-label="Follow us on LinkedIn"
           >
             <Linkedin size={20} />

@@ -95,3 +95,9 @@ body {
 canvas {
   display: none !important;
 }
+
+
+.fixed .bottom-top{
+  /* bottom: 20px; */
+}
+

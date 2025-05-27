@@ -37,44 +37,44 @@ export function SponsorsSection() {
       size: "medium",
     },
     {
-      name: "CyberSecure Solutions",
-      image: "/placeholder.svg?height=100&width=200&text=CyberSecure+Solutions&bg=0088cc&color=white",
+      name: "Chandigarh Police",
+      image: "/Chandigarh-Police.png?height=100&width=200&text=CyberSecure+Solutions&bg=0088cc&color=white",
       size: "medium",
     },
     {
-      name: "AI Defense Systems",
-      image: "/placeholder.svg?height=100&width=200&text=AI+Defense+Systems&bg=4169E1&color=white",
+      name: "STPI",
+      image: "/STPI.png?height=100&width=200&text=AI+Defense+Systems&bg=4169E1&color=white",
       size: "medium",
     },
     {
-      name: "SecureNet Technologies",
-      image: "/placeholder.svg?height=100&width=200&text=SecureNet+Tech&bg=2563eb&color=white",
+      name: "Cyber Crop",
+      image: "/CyberCrop.png?height=100&width=200&text=SecureNet+Tech&bg=2563eb&color=white",
       size: "medium",
     },
     {
-      name: "Digital Guardian",
-      image: "/placeholder.svg?height=100&width=200&text=Digital+Guardian&bg=1e40af&color=white",
+      name: "DesignersX",
+      image: "/DesignersXL.png?height=100&width=200&text=Digital+Guardian&bg=1e40af&color=white",
       size: "medium",
     },
     {
-      name: "ThreatShield",
-      image: "/placeholder.svg?height=100&width=200&text=ThreatShield&bg=3730a3&color=white",
-      size: "small",
+      name: "Rozana",
+      image: "/RozanaL.png?height=100&width=200&text=ThreatShield&bg=3730a3&color=white",
+      size: "medium",
     },
     {
       name: "AI Innovations",
-      image: "/placeholder.svg?height=100&width=200&text=AI+Innovations&bg=5b21b6&color=white",
-      size: "small",
+      image: "/SponserComming.png?height=100&width=200&text=AI+Innovations&bg=5b21b6&color=white",
+      size: "medium",
     },
     {
       name: "DataFortress",
-      image: "/placeholder.svg?height=100&width=200&text=DataFortress&bg=7c3aed&color=white",
-      size: "small",
+      image: "/SponserComming.png?height=100&width=200&text=DataFortress&bg=7c3aed&color=white",
+      size: "meduim",
     },
     {
       name: "CyberGuard Pro",
-      image: "/placeholder.svg?height=100&width=200&text=CyberGuard+Pro&bg=8b5cf6&color=white",
-      size: "small",
+      image: "/SponserComming.png?height=100&width=200&text=CyberGuard+Pro&bg=8b5cf6&color=white",
+      size: "medium",
     },
   ]
 
@@ -163,7 +163,7 @@ export function SponsorsSection() {
                         alt={sponsor.name}
                         width={sponsor.size === "large" ? 580 : 180}
                         height={sponsor.size === "large" ? 250 : 90}
-                        className="object-contain transition-transform duration-500 group-hover:scale-110 max-h-16 md:max-h-20"
+                        className="object-contain transition-transform duration-500 group-hover:scale-110 max-h-35 md:max-h-50"
                       />
                     </div>
 
