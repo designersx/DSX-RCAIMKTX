@@ -157,6 +157,7 @@ export function SponsorsSection() {
                     <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-tr-full"></div>
 
                     {/* Logo */}
+                    
                     <div className="relative z-10 p-4">
                       <Image
                         src={sponsor.image || "/placeholder.svg"}
@@ -166,8 +167,10 @@ export function SponsorsSection() {
                         className="object-contain transition-transform duration-500 group-hover:scale-110 max-h-35 md:max-h-50"
                       />
 
-                      <h3 className="text-5xl font-semibold text-center mt-6 text-white ">{sponsor.namee}</h3>
+                      <h3 className="text-5xl font-semibold text-center mt-6 text-white relative -bottom-12 ">{sponsor.namee}</h3>
                     </div>
+
+                    
 
                     {/* Subtle shine effect */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
