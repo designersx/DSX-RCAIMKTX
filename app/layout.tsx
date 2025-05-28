@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   description:
     "Join us at the Regional Cybersecurity & AI Conference 2025 at JW Marriott, Chandigarh on July 25, 2025. Organized by PHDCCI with support from multiple organizations.",
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-icon.png",
+    icon: "/Favicon.png",
+    apple: "/Favicon.png",
   },
     generator: 'v0.dev'
 }
@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/Favicon.png" sizes="any" />
       </head>
       <body className={`${plusJakartaSans.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
