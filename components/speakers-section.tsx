@@ -78,7 +78,7 @@ export function SpeakersSection() {
       name: "Ms. Smiti Bhatt",
       role: "Co-Founder & COO, AdvantageClub",
       image: "/Smiti Bhatt.jpg?height=400&width=300&text=African+Man+Cybersecurity+Director",
-      topic: "To Be Announced",
+      topic: "Scaling Smart with AI: How Businesses can Leverage AI for Growth",
       icon: Zap,
       color: "from-blue-500 to-indigo-600",
     },

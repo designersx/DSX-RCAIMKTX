@@ -523,10 +523,9 @@ export function AnimatedHeroSection() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1.5, duration: 0.5 }}
-        className="fixed bottom-10 right-6 z-40"
-      >
+        className="fixed bottom-10 left-6 z-40" >
         <motion.div
-          className="bg-[#0A1A3A]/80 backdrop-blur-md p-3 rounded-full border border-[#0088cc]/20 shadow-lg hover:shadow-[#0088cc]/20 transition-all duration-300"
+          className="bg-[#0A1A3A]/80 backdrop-blur-md p-3 sm:p-2 rounded-full border border-[#0088cc]/20 shadow-lg hover:shadow-[#0088cc]/20 transition-all duration-300"
           whileHover={{
             scale: 1.15,
             boxShadow: "0 0 30px rgba(0, 136, 204, 0.5)",
@@ -544,16 +543,15 @@ export function AnimatedHeroSection() {
             boxShadow: { duration: 2, repeat: Number.POSITIVE_INFINITY },
           }}
         >
-          <a
-            href="https://linkedin.com"
+          <a href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-2 text-white hover:text-[#0088cc] transition-colors "
+            className= " sm:flex  space-x-2 sm:space-x-1  items-center  text-white hover:text-[#0088cc] transition-colors "
             aria-label="Follow us on LinkedIn"
           >
             <Linkedin size={20} />
             <span className="text-sm font-medium hidden sm:block">
-              Follow Us
+              Follow Us ;
             </span>
           </a>
         </motion.div>

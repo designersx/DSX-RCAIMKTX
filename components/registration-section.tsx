@@ -81,7 +81,7 @@ export function RegistrationSection() {
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           ref={ref}
-          variants={containerVariants}max-w-5xl mx-auto
+          variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           className="space-y-12"
@@ -109,6 +109,7 @@ export function RegistrationSection() {
                     <div className="h-8 w-1 bg-gradient-to-b from-[#0088cc] to-blue-400 rounded-full"></div>
                     <h3 className="text-xl font-bold text-gray-900">Personal Information</h3>
                   </div>
+
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
