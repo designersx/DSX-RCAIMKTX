@@ -109,7 +109,7 @@ export function Header() {
                 {[
                   { name: "HOME", section: "hero" },
                   { name: "ABOUT", section: "about" },
-                  { name: "AGENDA", section: "Agenda" },    
+                  { name: "AGENDA", section: "agenda" },    
                   { name: "SPEAKERS", section: "speakers" },
                   { name: "SPONSORS", section: "sponsors" },
                   { name: "PRICING", section: "pricing" },

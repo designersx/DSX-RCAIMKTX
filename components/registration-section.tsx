@@ -81,7 +81,7 @@ export function RegistrationSection() {
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           ref={ref}
-          variants={containerVariants}
+          variants={containerVariants}max-w-5xl mx-auto
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           className="space-y-12"
@@ -101,7 +101,7 @@ export function RegistrationSection() {
             className="bg-white rounded-3xl shadow-xl overflow-hidden relative z-10 border border-gray-100"
           >
             {/* Form Content */}
-            <div className="p-8 md:p-10">
+            <div className="p-4 md:p-10">
               <form onSubmit={handleSubmit} className="space-y-8">
                 {/* Personal Information */}
                 <div className="space-y-6">

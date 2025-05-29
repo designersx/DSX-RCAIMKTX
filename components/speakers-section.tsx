@@ -67,17 +67,17 @@ export function SpeakersSection() {
       color: "from-cyan-500 to-blue-600",
     },
     {
-      name: "To Be Announced",
-      role: "To Be Announced.",
-      image: "/Coming-Soon.jpg?height=400&width=300&text=Asian+Woman+Tech+Executive",
-      topic: "To Be Announced",
+      name: "Adv. Pooja Nayar",
+      role: "Founder & Principal Consultant,Pratham HR & Legal Consultants.",
+      image: "/Pooja-Nayar.png?height=400&width=300&text=Asian+Woman+Tech+Executive",
+      topic: "Chair, PHDCCI SHE Forum, Chandigarh",
       icon: Network,
       color: "from-violet-500 to-purple-600",
     },
     {
-      name: "To Be Announced",
-      role: "To Be Announced",
-      image: "/Coming-Soon.jpg?height=400&width=300&text=African+Man+Cybersecurity+Director",
+      name: "Ms. Smiti Bhatt",
+      role: "Co-Founder & COO, AdvantageClub",
+      image: "/Smiti Bhatt.jpg?height=400&width=300&text=African+Man+Cybersecurity+Director",
       topic: "To Be Announced",
       icon: Zap,
       color: "from-blue-500 to-indigo-600",
@@ -165,11 +165,11 @@ export function SpeakersSection() {
                   {/* Speaker image with gradient overlay */}
                   <div className="relative h-64 overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
-                    <Image
+                    <Image 
                       src={speaker.image || "/placeholder.svg"}
                       alt={speaker.name}
                       fill
-                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      className=" bg-center object-cover object-top transition-transform duration-500 group-hover:scale-105"
                     />
 
                     {/* Topic badge */}

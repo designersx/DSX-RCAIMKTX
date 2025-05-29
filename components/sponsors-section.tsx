@@ -47,13 +47,13 @@ export function SponsorsSection() {
       size: "small",
     },
     {
-      name: "Cyber Crop",
-      image: "/CyberCrop.png?height=100&width=200&text=SecureNet+Tech&bg=2563eb&color=white",
+      name: "DesignersX",
+      image: "/DesignersXL.png?height=100&width=200&text=SecureNet+Tech&bg=2563eb&color=white",
       size: "medium",
     },
     {
-      name: "DesignersX",
-      image: "/DesignersXL.png?height=100&width=200&text=Digital+Guardian&bg=1e40af&color=white",
+      name: "Cyber Crop",
+      image: "/CyberCrop.png?height=100&width=200&text=Digital+Guardian&bg=1e40af&color=white",
       size: "medium",
     },
     {
@@ -151,7 +151,7 @@ export function SponsorsSection() {
                   <div className="absolute inset-0 bg-gradient-to-r from-[#0088cc]/40 to-purple-500/40 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                   {/* Frosted glass card */}
-                  <div className="relative h-full backdrop-blur-md bg-white/10 rounded-xl border border-white/20 p-6 flex items-center justify-center overflow-hidden shadow-lg transition-all duration-300 group-hover:border-white/30 group-hover:bg-white/15">
+                  <div className="relative h-full backdrop-blur-md bg-white/10 rounded-xl border border-white/20 md:p-6 sm:p-3 flex items-center justify-center overflow-hidden shadow-lg transition-all duration-300 group-hover:border-white/30 group-hover:bg-white/15">
                     {/* Decorative elements */}
                     <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-bl-full"></div>
                     <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-tr-full"></div>
@@ -164,10 +164,10 @@ export function SponsorsSection() {
                         alt={sponsor.name}
                         width={sponsor.size === "large" ? 580 : 180}
                         height={sponsor.size === "large" ? 250 : 90}
-                        className="object-contain transition-transform duration-500 group-hover:scale-110 max-h-35 md:max-h-50"
+                        className="object-cover transition-transform duration-500 group-hover:scale-110 m"
                       />
 
-                      <h3 className="text-5xl font-semibold text-center mt-6 text-white relative -bottom-12 ">{sponsor.namee}</h3>
+                      <h3 className="text-3xl md:text-5xl font-semibold text-center mt-6 text-white relative md:-bottom-12 sm:-bottom-8  ">{sponsor.namee}</h3>
                     </div>
 
                     
