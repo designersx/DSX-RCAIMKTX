@@ -75,8 +75,8 @@ export function SpeakersSection() {
       color: "from-violet-500 to-purple-600",
     },
     {
-      name: "Ms. Smiti Bhatt",
-      role: "Co-Founder & COO, AdvantageClub",
+      name: "Ms. Smiti Bhatt Deorah",
+      role: "Co-Founder & COO, AdvantageClub.ai",
       image: "/Smiti Bhatt.jpg?height=400&width=300&text=African+Man+Cybersecurity+Director",
       topic: "Scaling Smart with AI: How Businesses can Leverage AI for Growth",
       icon: Zap,
