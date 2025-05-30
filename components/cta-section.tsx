@@ -89,7 +89,7 @@ export function CTASection() {
 
   return (
     <section className="w-full py-20 bg-gradient-to-b from-white to-gray-100 px-4 sm:px-6 lg:px-8" id="booking">
-      <div className="container mx-auto max-w-7xl">
+      <div className=" md:container mx-auto max-w-7xl">
         <motion.div
           ref={ref}
           variants={containerVariants}
@@ -226,7 +226,7 @@ export function CTASection() {
         style={{
           border: 'none',
           height: '1407px',
-          width: '90%',
+          width: '100%',
           transition: 'all 0.5s ease',
         }}
       />

@@ -184,8 +184,7 @@ export function RegistrationSection() {
                       <Label htmlFor="organization" className="text-gray-700">
                         Organization
                       </Label>
-                      <Input
-                        id="organization"
+                      <Input id="organization"
                         name="organization"
                         value={formData.organization}
                         onChange={handleChange}
@@ -303,6 +302,9 @@ export function RegistrationSection() {
                     )}
                   </Button>
                 </div>
+
+
+
 
                 {/* Group Bookings Info */}
                 <div className="text-center bg-gray-50 p-4 rounded-xl">

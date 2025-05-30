@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image"
 import { Linkedin } from "lucide-react"
+import Link from 'next/link';
 
 export function Footer() {
   return (
@@ -19,17 +20,17 @@ export function Footer() {
               Regional Cybersecurity & AI Conference 2025 - Bringing together experts and professionals to discuss the
               latest trends and innovations in cybersecurity and artificial intelligence.
             </p>
-            <div className="flex items-center pt-2 md:hidden">
+            <div className="flex pt-2 md:hidden">
               <a
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#0088cc] transition-colors"
+                className=" widthLInkDi text-gray-400 hover:text-[#0088cc] transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
               </a>
-              <span className="text-gray-500 ml-2 text-sm">Follow us on LinkedIn</span>
+              <span className="text-gray-500 ml-1 text-sm">Follow us on LinkedIn</span>
             </div>
           </div>
 
@@ -177,12 +178,15 @@ export function Footer() {
             &copy; 2025 Regional Cybersecurity & AI Conference. All rights reserved.
           </p>
           <div className="flex space-x-4 sm:space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors">
+
+ <Link href="/privacy"className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors">Privacy Policy
+            </Link>
+            
+            <Link href="/terms" className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors">
               Terms of Service
-            </a>
+      </Link>
+            
+            
           </div>
         </div>
       </div>

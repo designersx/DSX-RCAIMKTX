@@ -101,5 +101,12 @@ canvas {
   /* bottom: 20px; */
 }
 
+a.widthLInkDi{
+  width:30px;
+  height:30px;
+  min-height: 30px !important;
+   min-width: 30px !important;
+}
+
 
 
