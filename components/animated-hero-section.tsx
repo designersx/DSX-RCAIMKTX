@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Linkedin, ChevronDown, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ParticlesBackground from "./ui/ParticlesBackground";
+import { useRouter } from "next/navigation";
 
 export function AnimatedHeroSection() {
   const [timeLeft, setTimeLeft] = useState({
@@ -14,6 +15,8 @@ export function AnimatedHeroSection() {
     minutes: 0,
     seconds: 0,
   });
+
+  const router = useRouter();
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -68,6 +71,10 @@ export function AnimatedHeroSection() {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
+    if (sectionId === "attend") {
+      router.push("/Attend"); 
+      return;
+    }
     setMobileMenuOpen(false);
     const element = document.getElementById(sectionId);
     if (element) {
@@ -425,6 +432,7 @@ export function AnimatedHeroSection() {
                 { name: "SPONSORS", section: "sponsors" },
                 { name: "PRICING", section: "pricing" },
                 { name: "REGISTER", section: "booking" },
+                { name: "ATTEND", section: "attend" },
               ].map((item) => (
                 <motion.button
                   key={item.name}
@@ -496,6 +504,7 @@ export function AnimatedHeroSection() {
                   { name: "SPONSORS", section: "sponsors" },
                   { name: "PRICING", section: "pricing" },
                   { name: "REGISTER", section: "booking" },
+                  { name: "ATTEND", section: "attend" },
                 ].map((item) => (
                   <motion.button
                     key={item.name}
@@ -523,7 +532,8 @@ export function AnimatedHeroSection() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1.5, duration: 0.5 }}
-        className="fixed bottom-6 left-6 z-40" >
+        className="fixed bottom-6 left-6 z-40"
+      >
         <motion.div
           className="bg-[#0A1A3A]/80 backdrop-blur-md p-3 sm:p-2 rounded-full border border-[#0088cc]/20 shadow-lg hover:shadow-[#0088cc]/20 transition-all duration-300"
           whileHover={{
@@ -543,11 +553,13 @@ export function AnimatedHeroSection() {
             boxShadow: { duration: 2, repeat: Number.POSITIVE_INFINITY },
           }}
         >
-          <a href="https://linkedin.com"
+          <a
+            href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className= " sm:flex  space-x-2 sm:space-x-1  items-center  text-white hover:text-[#0088cc] transition-colors "
-            aria-label="Follow us on LinkedIn" >
+            className=" sm:flex  space-x-2 sm:space-x-1  items-center  text-white hover:text-[#0088cc] transition-colors "
+            aria-label="Follow us on LinkedIn"
+          >
             <Linkedin size={20} />
             <span className="text-sm font-medium hidden sm:block">
               Follow Us
@@ -684,10 +696,7 @@ export function AnimatedHeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 2, duration: 0.8 }}
             >
-              <motion.div
-               
-               
-              >
+              <motion.div>
                 <Button
                   className="bg-[#0088cc] hover:bg-[#0088cc]/80 text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-full transition-all duration-300"
                   onClick={scrollToAbout}

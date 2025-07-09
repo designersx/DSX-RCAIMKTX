@@ -1,51 +1,53 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Image from "next/image"
-import { motion, AnimatePresence } from "framer-motion"
-import { Menu, X } from "lucide-react"
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
 
 export function Header() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
-        setIsScrolled(true)
+        setIsScrolled(true);
       } else {
-        setIsScrolled(false)
+        setIsScrolled(false);
       }
-    }
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Close mobile menu when screen size changes to desktop
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
-        setMobileMenuOpen(false)
+        setMobileMenuOpen(false);
       }
-    }
+    };
 
-    window.addEventListener("resize", handleResize)
-    return () => window.removeEventListener("resize", handleResize)
-  }, [])
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
-    setMobileMenuOpen(false)
-    const element = document.getElementById(sectionId)
+    setMobileMenuOpen(false);
+    const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled || mobileMenuOpen ? "bg-white shadow-lg py-2" : "bg-transparent py-4"
+        isScrolled || mobileMenuOpen
+          ? "bg-white shadow-lg py-2"
+          : "bg-transparent py-4"
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -70,6 +72,7 @@ export function Header() {
               { name: "SPONSORS", section: "sponsors" },
               { name: "PRICING", section: "pricing" },
               { name: "REGISTER", section: "booking" },
+              { name: "ATTEND", section: "attend" },
             ].map((item) => (
               <button
                 key={item.name}
@@ -109,11 +112,12 @@ export function Header() {
                 {[
                   { name: "HOME", section: "hero" },
                   { name: "ABOUT", section: "about" },
-                  { name: "AGENDA", section: "agenda" },    
+                  { name: "AGENDA", section: "agenda" },
                   { name: "SPEAKERS", section: "speakers" },
                   { name: "SPONSORS", section: "sponsors" },
                   { name: "PRICING", section: "pricing" },
                   { name: "REGISTER", section: "booking" },
+                 { name: "ATTEND", section: "attend" },
                 ].map((item) => (
                   <button
                     key={item.name}
@@ -131,5 +135,5 @@ export function Header() {
         )}
       </AnimatePresence>
     </header>
-  )
+  );
 }

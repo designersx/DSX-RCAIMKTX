@@ -27,7 +27,7 @@ export function SponsorsSection() {
   // Sponsor logos
   const sponsors = [
     {
-      namee: "Organized By",
+      name: "Organized By",
       image: "/phdcci-logo.png",
       size: "large",
     },
