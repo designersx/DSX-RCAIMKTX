@@ -120,7 +120,7 @@ export function Footer() {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <span className="text-gray-400 text-sm sm:text-base">JW Marriott, Chandigarh</span>
+                <span className="text-gray-400 text-sm sm:text-base">Hotel Taj, Chandigarh</span>
               </li>
               <li className="flex items-start">
                 <svg
