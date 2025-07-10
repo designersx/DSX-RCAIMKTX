@@ -62,18 +62,18 @@ export function SponsorsSection() {
       size: "small",
     },
     {
-      name: "AI Innovations",
-      image: "/SponserComming.png?height=100&width=200&text=AI+Innovations&bg=5b21b6&color=white",
+      name: "Haryana Police",
+      image: "/H-Police.png?height=100&width=200&text=AI+Innovations&bg=5b21b6&color=white",
       size: "medium",
     },
     {
-      name: "DataFortress",
-      image: "/SponserComming.png?height=100&width=200&text=DataFortress&bg=7c3aed&color=white",
+      name: "Unified Voice Communication",
+      image: "/Unified-Voice.png?height=100&width=200&text=DataFortress&bg=7c3aed&color=white",
       size: "meduim",
     },
     {
-      name: "CyberGuard Pro",
-      image: "/SponserComming.png?height=100&width=200&text=CyberGuard+Pro&bg=8b5cf6&color=white",
+      name: "Qubify",
+      image: "/Qubify.png?height=100&width=200&text=CyberGuard+Pro&bg=8b5cf6&color=white",
       size: "medium",
     },
   ]

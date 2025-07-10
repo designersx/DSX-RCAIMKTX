@@ -85,7 +85,7 @@ export function SpeakersSection() {
     {
       name: "CS Rahul Jogi",
       role: "Organizing Committee Member & Convener, Regional NCLT and Corporate Affairs Committee, PHDCCI",
-      image: "/Coming-Soon.jpg?height=400&width=300&text=Asian+Woman+Tech+Executive",
+      image: "/Rahul-Jogi.png?height=400&width=300&text=Asian+Woman+Tech+Executive",
       topic: "Cyber Law Enforcement: Strategy, Challenges, and Real-World Impact",
       icon: Network,
       color: "from-violet-500 to-purple-600",
@@ -93,7 +93,7 @@ export function SpeakersSection() {
     {
       name: "Mr. Kulbir Singh",
       role: "Founder & CTO, DesignersX",
-      image: "/Coming-Soon.jpg?height=400&width=300&text=African+Man+Cybersecurity+Director",
+      image: "/Kulbir-Singh.png?height=400&width=300&text=African+Man+Cybersecurity+Director",
       topic: "Scaling Smart with AI: How Businesses can Leverage AI for Growth",
       icon: Zap,
       color: "from-blue-500 to-indigo-600",
@@ -101,7 +101,7 @@ export function SpeakersSection() {
     {
       name: "Mr. Amarpal Singh",
       role: "Cyber Lead India, WTW ",
-      image: "/Coming-Soon.jpg?height=400&width=300&text=Asian+Woman+Tech+Executive",
+      image: "/Amarpal-Singh.png?height=400&width=300&text=Asian+Woman+Tech+Executive",
       topic: "DPDP Act 2023 in Action:  Compliance, Confusion & Consequences",
       icon: Network,
       color: "from-violet-500 to-purple-600",
@@ -109,7 +109,7 @@ export function SpeakersSection() {
     {
       name: "Sh. Vinod Sharma",
       role: "Regional Director Ministry of Corporate Affairs, North Region",
-      image: "/Coming-Soon.jpg?height=400&width=300&text=African+Man+Cybersecurity+Director",
+      image: "/Vinod-Sharma.png?height=400&width=300&text=African+Man+Cybersecurity+Director",
       topic: "Inaugural Session",
       icon: Zap,
       color: "from-blue-500 to-indigo-600",
