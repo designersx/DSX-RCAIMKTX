@@ -26,6 +26,7 @@ function Attend() {
           }}
           allowFullScreen
         />
+        <div></div>
       </div>
       <Footer />
     </div>
