@@ -689,7 +689,7 @@ export function AnimatedHeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.8 }}
             >
-              JW Marriott, Chandigarh, India
+              Hotel Taj, Chandigarh, India
             </motion.p>
 
             {/* Countdown Timer */}

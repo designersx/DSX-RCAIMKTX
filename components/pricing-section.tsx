@@ -1,14 +1,15 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useInView } from "framer-motion"
-import { useRef } from "react"
-import { Button } from "@/components/ui/button"
-import { Check, Sparkles } from "lucide-react"
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import { Button } from "@/components/ui/button";
+import { Check, Sparkles } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export function PricingSection() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.2 })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -18,7 +19,7 @@ export function PricingSection() {
         staggerChildren: 0.2,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -32,7 +33,7 @@ export function PricingSection() {
         duration: 0.6,
       },
     },
-  }
+  };
 
   const pricingTiers = [
     {
@@ -59,14 +60,20 @@ export function PricingSection() {
       ],
       highlight: true,
     },
-  ]
+  ];
 
   const scrollToBooking = () => {
-    const element = document.getElementById("booking")
+    const element = document.getElementById("booking");
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
+
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push("/attend");
+  };
 
   return (
     <section
@@ -106,11 +113,17 @@ export function PricingSection() {
           animate={isInView ? "visible" : "hidden"}
           className="space-y-16"
         >
-          <motion.div variants={itemVariants} className="text-center max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Ticket Pricing</h2>
+          <motion.div
+            variants={itemVariants}
+            className="text-center max-w-3xl mx-auto"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+              Ticket Pricing
+            </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#0088cc] to-blue-400 mx-auto mb-6"></div>
             <p className="text-blue-100 text-lg">
-              Secure your spot at the Regional Cybersecurity & AI Conference 2025 with our flexible ticket options.
+              Secure your spot at the Regional Cybersecurity & AI Conference
+              2025 with our flexible ticket options.
             </p>
           </motion.div>
 
@@ -158,13 +171,19 @@ export function PricingSection() {
 
                   <div className="p-8 md:p-10">
                     {/* Tier name */}
-                    <h3 className="text-xl md:text-2xl font-bold text-white mb-6">{tier.name}</h3>
+                    <h3 className="text-xl md:text-2xl font-bold text-white mb-6">
+                      {tier.name}
+                    </h3>
 
                     {/* Price */}
                     <div className="mb-8">
                       <div className="flex items-baseline">
-                        <span className="text-4xl md:text-5xl font-extrabold text-white">{tier.price}</span>
-                        <span className="text-blue-200 ml-2 text-lg">/person</span>
+                        <span className="text-4xl md:text-5xl font-extrabold text-white">
+                          {tier.price}
+                        </span>
+                        <span className="text-blue-200 ml-2 text-lg">
+                          /person
+                        </span>
                       </div>
                     </div>
 
@@ -182,7 +201,7 @@ export function PricingSection() {
 
                     {/* CTA Button */}
                     <Button
-                      onClick={scrollToBooking}
+                      onClick={handleClick}
                       className={`w-full py-6 text-lg rounded-xl transition-all duration-300 ${
                         tier.highlight
                           ? "bg-gradient-to-r from-[#0088cc] to-blue-500 text-white hover:shadow-lg hover:shadow-blue-500/20"
@@ -203,7 +222,7 @@ export function PricingSection() {
           </motion.div>
 
           {/* Group discount info */}
-          <motion.div variants={itemVariants} className="text-center max-w-3xl mx-auto mt-8">
+          {/* <motion.div variants={itemVariants} className="text-center max-w-3xl mx-auto mt-8">
             <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-xl p-6 inline-block">
               <h3 className="text-xl font-semibold text-white mb-3">Group Discounts</h3>
               <p className="text-blue-100">
@@ -211,10 +230,13 @@ export function PricingSection() {
                 at <span className="text-[#0088cc] font-medium">rcaconference2025@gmail.com</span> for more information.
               </p>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Disclaimer */}
-          <motion.div variants={itemVariants} className="text-center text-blue-200/70 text-sm">
+          <motion.div
+            variants={itemVariants}
+            className="text-center text-blue-200/70 text-sm"
+          >
             *Valid ID required at check-in
           </motion.div>
         </motion.div>
@@ -249,5 +271,5 @@ export function PricingSection() {
         }
       `}</style>
     </section>
-  )
+  );
 }
