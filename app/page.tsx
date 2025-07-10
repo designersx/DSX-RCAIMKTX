@@ -20,7 +20,7 @@ export default function Home() {
       <SpeakersSection />
       <SponsorsSection />
       <PricingSection />
-      <CTASection />
+      {/* <CTASection /> */}
       <Footer />
       <ScrollToTop />
     </main>

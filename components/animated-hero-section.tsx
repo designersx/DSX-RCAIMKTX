@@ -70,15 +70,56 @@ export function AnimatedHeroSection() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // const scrollToSection = (sectionId: string) => {
+  //   if (sectionId === "attend") {
+  //     router.push("/attend");
+  //     return;
+  //   }
+  //   setMobileMenuOpen(false);
+  //   const element = document.getElementById(sectionId);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
+
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    const section = url.searchParams.get("scrollTo");
+
+    if (section) {
+      let attempts = 0;
+      const maxAttempts = 20; // Up to ~4 seconds
+      const interval = setInterval(() => {
+        const element = document.getElementById(section);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+
+          // Clean the query string
+          const newUrl = window.location.pathname;
+          window.history.replaceState({}, document.title, newUrl);
+
+          clearInterval(interval);
+        } else {
+          attempts++;
+          if (attempts > maxAttempts) clearInterval(interval);
+        }
+      }, 200); // Retry every 200ms
+    }
+  }, []);
+
   const scrollToSection = (sectionId: string) => {
     if (sectionId === "attend") {
-      router.push("/Attend"); 
-      return;
-    }
-    setMobileMenuOpen(false);
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      router.push("/attend");
+    } else {
+      if (window.location.pathname !== "/") {
+        router.push(`/?scrollTo=${sectionId}`);
+      } else {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+      setMobileMenuOpen(false);
     }
   };
 
@@ -431,24 +472,35 @@ export function AnimatedHeroSection() {
                 { name: "SPEAKERS", section: "speakers" },
                 { name: "SPONSORS", section: "sponsors" },
                 { name: "PRICING", section: "pricing" },
-                { name: "REGISTER", section: "booking" },
+                // { name: "REGISTER", section: "booking" },
                 { name: "ATTEND", section: "attend" },
-              ].map((item) => (
-                <motion.button
-                  key={item.name}
-                  onClick={() => scrollToSection(item.section)}
-                  className={`text-white hover:text-[#0088cc] font-medium transition-colors ${
-                    item.name === "HOME" ? "text-[#0088cc]" : ""
-                  }`}
-                  whileHover={{
-                    scale: 1.05,
-                    textShadow: "0 0 8px rgba(0, 136, 204, 0.8)",
-                  }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  {item.name}
-                </motion.button>
-              ))}
+              ].map((item) => {
+                const isAttend = item.name === "ATTEND";
+
+                return (
+                  <motion.button
+                    key={item.name}
+                    onClick={() => scrollToSection(item.section)}
+                    className={`font-medium transition-all px-4 py-2 rounded-md
+          ${
+            isAttend
+              ? "bg-yellow-400 text-black hover:bg-yellow-500 shadow-md"
+              : "text-white hover:text-[#0088cc]"
+          } 
+          ${item.name === "HOME" && !isAttend ? "text-[#0088cc]" : ""}
+        `}
+                    whileHover={{
+                      scale: 1.05,
+                      textShadow: isAttend
+                        ? ""
+                        : "0 0 8px rgba(0, 136, 204, 0.8)",
+                    }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    {item.name}
+                  </motion.button>
+                );
+              })}
             </nav>
 
             {/* Mobile Menu Button */}
@@ -503,24 +555,35 @@ export function AnimatedHeroSection() {
                   { name: "SPEAKERS", section: "speakers" },
                   { name: "SPONSORS", section: "sponsors" },
                   { name: "PRICING", section: "pricing" },
-                  { name: "REGISTER", section: "booking" },
+                  // { name: "REGISTER", section: "booking" },
                   { name: "ATTEND", section: "attend" },
-                ].map((item) => (
-                  <motion.button
-                    key={item.name}
-                    onClick={() => scrollToSection(item.section)}
-                    className={`text-white hover:text-[#0088cc] font-medium transition-colors text-left py-2 ${
-                      item.name === "HOME" ? "text-[#0088cc]" : ""
-                    }`}
-                    whileHover={{
-                      x: 15,
-                      textShadow: "0 0 8px rgba(0, 136, 204, 0.8)",
-                    }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    {item.name}
-                  </motion.button>
-                ))}
+                ].map((item) => {
+                  const isAttend = item.name === "ATTEND";
+
+                  return (
+                    <motion.button
+                      key={item.name}
+                      onClick={() => scrollToSection(item.section)}
+                      className={`font-medium transition-all text-left py-2 px-4 rounded-md
+          ${
+            isAttend
+              ? "bg-yellow-400 text-black hover:bg-yellow-500 shadow-md"
+              : "text-white hover:text-[#0088cc]"
+          } 
+          ${item.name === "HOME" && !isAttend ? "text-[#0088cc]" : ""}
+        `}
+                      whileHover={{
+                        x: 15,
+                        textShadow: isAttend
+                          ? ""
+                          : "0 0 8px rgba(0, 136, 204, 0.8)",
+                      }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      {item.name}
+                    </motion.button>
+                  );
+                })}
               </nav>
             </div>
           </motion.div>
@@ -697,11 +760,18 @@ export function AnimatedHeroSection() {
               transition={{ delay: 2, duration: 0.8 }}
             >
               <motion.div>
-                <Button
+                {/* <Button
                   className="bg-[#0088cc] hover:bg-[#0088cc]/80 text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-full transition-all duration-300"
                   onClick={scrollToAbout}
                 >
-                  DISCOVER MORE{" "}
+                 BOOK NOW
+                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                </Button> */}
+                <Button
+                  className="bg-[#0088cc] hover:bg-[#0088cc]/80 text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-full transition-all duration-300"
+                  onClick={() => router.push("/attend")}
+                >
+                  BOOK NOW
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Button>
               </motion.div>
