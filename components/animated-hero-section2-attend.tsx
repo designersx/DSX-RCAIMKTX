@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Linkedin, ChevronDown, ArrowRight } from "lucide-react";
@@ -8,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import ParticlesBackground from "./ui/ParticlesBackground";
 import { useRouter } from "next/navigation";
 
-export function AnimatedHeroSection() {
+export function AnimatedHeroSection2() {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -72,7 +73,7 @@ export function AnimatedHeroSection() {
 
   // const scrollToSection = (sectionId: string) => {
   //   if (sectionId === "attend") {
-  //     router.push("/attend");
+  //     router.push("/Attend");
   //     return;
   //   }
   //   setMobileMenuOpen(false);
@@ -82,34 +83,36 @@ export function AnimatedHeroSection() {
   //   }
   // };
 
-  useEffect(() => {
-    const url = new URL(window.location.href);
-    const section = url.searchParams.get("scrollTo");
+useEffect(() => {
+  const url = new URL(window.location.href);
+  const section = url.searchParams.get("scrollTo");
 
-    if (section) {
-      let attempts = 0;
-      const maxAttempts = 20; // Up to ~4 seconds
-      const interval = setInterval(() => {
-        const element = document.getElementById(section);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
+  if (section) {
+    let attempts = 0;
+    const maxAttempts = 20; // Up to ~4 seconds
+    const interval = setInterval(() => {
+      const element = document.getElementById(section);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
 
-          // Clean the query string
-          const newUrl = window.location.pathname;
-          window.history.replaceState({}, document.title, newUrl);
+        // Clean the query string
+        const newUrl = window.location.pathname;
+        window.history.replaceState({}, document.title, newUrl);
 
-          clearInterval(interval);
-        } else {
-          attempts++;
-          if (attempts > maxAttempts) clearInterval(interval);
-        }
-      }, 200); // Retry every 200ms
-    }
-  }, []);
+        clearInterval(interval);
+      } else {
+        attempts++;
+        if (attempts > maxAttempts) clearInterval(interval);
+      }
+    }, 200); // Retry every 200ms
+  }
+}, []);
+
+
 
   const scrollToSection = (sectionId: string) => {
     if (sectionId === "attend") {
-      router.push("/attend");
+      router.push("/Attend");
     } else {
       if (window.location.pathname !== "/") {
         router.push(`/?scrollTo=${sectionId}`);
@@ -298,7 +301,7 @@ export function AnimatedHeroSection() {
 
   return (
     <section
-      className="relative min-h-screen w-full  overflow-hidden bg-[#050a1c3d]"
+      className="relative min-h-[20vh] w-full  overflow-hidden bg-[#050a1c3d]"
       id="hero"
     >
       <div className="relative z-[-100]">
@@ -454,13 +457,15 @@ export function AnimatedHeroSection() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             <div className="flex items-center">
-              <Image
-                src="/RCA_WHITE_LOGO.jpg"
-                alt="RCA Logo"
-                width={100}
-                height={40}
-                className="sm:w-[120px]"
-              />
+              <Link href="/">
+                <Image
+                  src="/RCA_WHITE_LOGO.jpg"
+                  alt="RCA Logo"
+                  width={100}
+                  height={40}
+                  className="sm:w-[120px] cursor-pointer"
+                />
+              </Link>
             </div>
 
             {/* Desktop Navigation */}
@@ -632,174 +637,6 @@ export function AnimatedHeroSection() {
       </motion.div>
 
       {/* Main Hero Content */}
-      <div className="container relative z-10 mx-auto h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 pt-20">
-        <div className="flex flex-col items-center justify-center text-center max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="flex flex-col space-y-6 md:space-y-8 text-center"
-          >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.8 }}
-              className="text-[#0088cc] font-medium text-lg sm:text-xl"
-            >
-              25 JULY, 2025
-            </motion.div>
-
-            <motion.h1
-              className="text-3xl sm:text-3xl md:text-6xl lg:text-7xl font-bold text-white leading-tight"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.8 }}
-            >
-              <motion.span
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.6, duration: 0.5 }}
-                whileHover={{ textShadow: "0 0 20px rgba(0, 136, 204, 0.8)" }}
-              >
-                REGIONAL &nbsp;
-              </motion.span>
-              <br className="hidden sm:block" />
-              <motion.span
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.8, duration: 0.5 }}
-                whileHover={{ textShadow: "0 0 20px rgba(0, 136, 204, 0.8)" }}
-              >
-                CYBERSECURITY
-              </motion.span>
-              <br className="hidden sm:block" />
-              <motion.span
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.0, duration: 0.5 }}
-                whileHover={{ textShadow: "0 0 20px rgba(0, 136, 204, 0.8)" }}
-              >
-                & AI CONFERENCE
-              </motion.span>
-            </motion.h1>
-
-            <motion.p
-              className="text-white/80 text-base sm:text-lg"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.2, duration: 0.8 }}
-            >
-              JW Marriott, Chandigarh, India
-            </motion.p>
-
-            {/* Countdown Timer */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.4, duration: 0.8 }}
-              className="pt-2 md:pt-4 mx-auto w-full max-w-lg"
-            >
-              <div className="flex space-x-2 sm:space-x-4">
-                {[
-                  { label: "DAYS", value: timeLeft.days },
-                  { label: "HRS", value: timeLeft.hours },
-                  { label: "MINS", value: timeLeft.minutes },
-                  { label: "SECS", value: timeLeft.seconds },
-                ].map((unit, index) => (
-                  <motion.div
-                    key={unit.label}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1.6 + 0.1 * index, duration: 0.5 }}
-                    className="flex-1"
-                    whileHover={{ scale: 1.1, y: -5 }}
-                  >
-                    <motion.div
-                      className="bg-[#0A1A3A]/50 backdrop-blur-md border border-[#0088cc]/20 rounded-lg p-2 sm:p-4 text-center"
-                      animate={{
-                        borderColor: [
-                          "rgba(0, 136, 204, 0.2)",
-                          "rgba(0, 136, 204, 0.6)",
-                          "rgba(0, 136, 204, 0.2)",
-                        ],
-                        boxShadow: [
-                          "0 0 5px rgba(0, 136, 204, 0.2)",
-                          "0 0 15px rgba(0, 136, 204, 0.4)",
-                          "0 0 5px rgba(0, 136, 204, 0.2)",
-                        ],
-                      }}
-                      transition={{
-                        duration: 2,
-                        repeat: Number.POSITIVE_INFINITY,
-                        delay: index * 0.5,
-                      }}
-                    >
-                      <motion.div
-                        className="text-xl sm:text-2xl md:text-3xl font-bold text-white"
-                        key={unit.value}
-                        initial={{ scale: 1.2, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 1 }}
-                        transition={{ duration: 0.3 }}
-                      >
-                        {unit.value.toString().padStart(2, "0")}
-                      </motion.div>
-                      <div className="text-[10px] sm:text-xs text-[#0088cc] mt-0 sm:mt-1 font-semibold">
-                        {unit.label}
-                      </div>
-                    </motion.div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-
-            {/* CTA Button */}
-            <motion.div
-              className="pt-4 md:pt-6"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 2, duration: 0.8 }}
-            >
-              <motion.div>
-                {/* <Button
-                  className="bg-[#0088cc] hover:bg-[#0088cc]/80 text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-full transition-all duration-300"
-                  onClick={scrollToAbout}
-                >
-                 BOOK NOW
-                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-                </Button> */}
-                <Button
-                  className="bg-[#0088cc] hover:bg-[#0088cc]/80 text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-full transition-all duration-300"
-                  onClick={() => router.push("/attend")}
-                >
-                  BOOK NOW
-                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-                </Button>
-              </motion.div>
-            </motion.div>
-          </motion.div>
-        </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0, y: -10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 2.2, duration: 0.5 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer"
-        onClick={scrollToAbout}
-        whileHover={{
-          scale: 1.2,
-          textShadow: "0 0 10px rgba(0, 136, 204, 0.8)",
-        }}
-        whileTap={{ scale: 0.9 }}
-      >
-        <motion.div
-          animate={{ y: [0, 15, 0] }}
-          transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}
-        >
-          <ChevronDown className="h-8 w-8 text-[#0088cc]" />
-        </motion.div>
-      </motion.div>
     </section>
   );
 }

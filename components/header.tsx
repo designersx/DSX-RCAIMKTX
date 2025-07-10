@@ -116,7 +116,7 @@ export function Header() {
                   { name: "SPEAKERS", section: "speakers" },
                   { name: "SPONSORS", section: "sponsors" },
                   { name: "PRICING", section: "pricing" },
-                  { name: "REGISTER", section: "booking" },
+                  // { name: "REGISTER", section: "booking" },
                  { name: "ATTEND", section: "attend" },
                 ].map((item) => (
                   <button
