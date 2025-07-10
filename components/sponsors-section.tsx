@@ -73,7 +73,7 @@ export function SponsorsSection() {
     },
     {
       name: "Qubify",
-      image: "/Qubify.png?height=100&width=200&text=CyberGuard+Pro&bg=8b5cf6&color=white",
+      image: "/Qubify-Blue.png?height=100&width=200&text=CyberGuard+Pro&bg=8b5cf6&color=white",
       size: "medium",
     },
   ]
