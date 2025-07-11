@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useInView } from "framer-motion"
-import { useRef } from "react"
-import { Clock, Coffee, Users, Utensils, Award, MapPin } from "lucide-react"
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import { Clock, Coffee, Users, Utensils, Award, MapPin } from "lucide-react";
 
 export function AgendaSection() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.1 })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -17,7 +17,7 @@ export function AgendaSection() {
         staggerChildren: 0.1,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { opacity: 0, x: -30 },
@@ -31,74 +31,62 @@ export function AgendaSection() {
         duration: 0.6,
       },
     },
-  }
+  };
 
   const agendaItems = [
     {
-      time: "10:30 AM - 11:00 AM",
-      title: "Registration & Welcome Tea",
-      description: "Check-in, networking, and welcome refreshments",
-      type: "break",
-      icon: Coffee,
-      speaker: null,
+      time: "10:15 AM - 11:00 AM",
+      title: "Zero Trust Principle",
+      description:
+        "Cyber Security and AI Opportunities and Threats for Businesses",
+      type: "session",
+      icon: Award,
+      speaker: "Sh. Aashish Abrahim (CISCO), Ms. Rashmi Sharma Yadav (DCP I4C)",
       location: "Main Lobby",
     },
     {
-      time: "11:00 AM - 11:30 AM",
-      title: "Inaugural Session & Opening Remarks",
-      description: "Welcome address and conference overview",
-      type: "ceremony",
-      icon: Users,
-      speaker: "Conference Organizers",
+      time: "11:00 AM - 12:00 PM",
+      title: "Inaugural Session",
+      description:
+        "Opening Remarks, Welcome Address, Keynote Address, Address by Guest of Honor",
+      type: "session",
+      icon: Award,
+      speaker:
+        "Ms. Bharti Sood (Regional Director PHDCCI), Sh. Tarun Malhotra (Convener Regional Cyber Security and AI Committee PHDCCI), Sh. Vinod Sharma (Regional Director Northern Region Ministry of Corporate Affairs Government of India), Sh. Shailendra Tyagi (Director Software Technology Parks of India Ministry of Electronics and Information Technology Government of India), Sh. Rakesh Kumar, IPS* (CEO Indian Cybercrime Coordination Centre (I4C) Ministry of Home Affairs Government of India), CS Rahul Jogi (Convener Regional NCLT and Corporate Affairs Committee PHDCCI) ",
       location: "Main Auditorium",
     },
     {
-      time: "11:30 AM - 12:30 PM",
-      title: "Workshop: Cyber Threat Landscape: Trends, Tactics",
-      description: "Exploring emerging threats and defense strategies in the digital age",
+      time: "12:00 AM - 12:45 PM",
+      title: "Session 2- DPDP Act 2023 in Action:",
+      description: "Compliance, Confusion &amp; Consequences",
       type: "keynote",
       icon: Award,
-      speaker: "Dr. Aisha Patel, Chief Security Officer, TechSecure",
+      speaker:
+        "Ms. Debashree Mukherjee (Associate Director PwC), Sh. Bharat Chugh* (Former Judge)",
       location: "Main Auditorium",
     },
     {
-      time: "12:30 PM - 01:00 PM",
-      title: "Networking & Tea Break",
-      description: "How machine learning is revolutionizing cybersecurity threat identification",
-      type: "session",
+      time: "12:45 PM - 01:30 PM",
+      title: "Session 3- Scaling Smart with AI:",
+      description: "How Businesses can leverage AI for Growth",
+      type: "keynote",
       icon: Clock,
-      speaker: "Sarah Johnson, AI Ethics Researcher, Global Tech",
+      speaker:
+        "Ms. Smiti Bhatt (Founder Advantage Club AI), Ms. Isha Rani (Head of Engineering Microsoft)",
       location: "Main Auditorium",
     },
     {
-      time: "01:00 PM - 02:00 PM",
-      title: "Fireside Chat: Reel to Real — Behind the Scam",
-      description: "Coffee, refreshments, and networking opportunities",
-      type: "break",
-      icon: Coffee,
-      speaker: null,
+      time: "01:30 PM - 02:00 PM",
+      title: "Workshop on Cyber Threat Landscape:",
+      description: "Trends, Tactics Safeguard Against Cybercrime and Attacks",
+      type: "session",
+      icon: Award,
+      speaker:
+        "Sh. Tarun Malhotra (Convener Regional Cyber Security and AI Committee PHDCCI)",
       location: "Exhibition Area",
     },
     {
-      time: "02:00 PM - 03:00 PM",
-      title: "Networking Lunch",
-      description: "Law enforcement perspectives on combating cybercrime",
-      type: "session",
-      icon: Clock,
-      speaker: "Rajiv Sharma, SP - Cyber Crime, Punjab Police",
-      location: "Main Auditorium",
-    },
-    {
-      time: "03:00 PM - 04:30 PM",
-      title: "Panel Discussion: Cyber Law Enforcement: Strategy, Challenges, and Real World Impact",
-      description: "Industry experts discuss responsible AI development and deployment",
-      type: "panel",
-      icon: Users,
-      speaker: "Multiple Industry Experts",
-      location: "Main Auditorium",
-    },
-    {
-      time: "04:30 PM - 05:00 PM",
+      time: "02:00 PM - 02:30 PM",
       title: "Valedictory Session & Vote of Thanks",
       description: "Networking lunch with fellow attendees and speakers",
       type: "break",
@@ -107,57 +95,98 @@ export function AgendaSection() {
       location: "Banquet Hall",
     },
     {
-      time: "05:00 PM - 05:30 PM",
-      title: "High Tea & Final Networking",
-      description: "Building robust security architectures for modern enterprises",
+      time: "02:30 PM - 03:00 PM",
+      title: "Fireside Chat:",
+      description: "Reel to Real Behind the Scam",
       type: "session",
       icon: Clock,
-      speaker: "Dr. Vikram Mehta, Professor, Cybersecurity Institute",
+      speaker: "Mr. Manish Trehan (Producer Jamtara- Netflix Series)",
       location: "Main Auditorium",
-    }
-  ]
+    },
+    {
+      time: "03:00 PM - 04:00 PM",
+      title: "Cyber Law Enforcement:",
+      description: "Strategy, Challenges, and Real-World Impact",
+      type: "panel",
+      icon: Users,
+      speaker:
+        "Ms. Geetanjali Khandelwal, IPS (SP- Cyber Crime Cell Chandigarh Police), Sh. Jashandeep Singh Gill, PPS (SP- Cyber Crime Cell Punjab Police), Sh. Deepak Saharan, IPS (SP-Cyber Crime Cell Haryana Police)",
+      location: "Main Auditorium",
+    },
+    // {
+    //   time: "04:30 PM - 05:00 PM",
+    //   title: "Valedictory Session & Vote of Thanks",
+    //   description: "Networking lunch with fellow attendees and speakers",
+    //   type: "break",
+    //   icon: Utensils,
+    //   speaker: null,
+    //   location: "Banquet Hall",
+    // },
+    {
+      time: "04:00 PM - 04:50 PM",
+      title: "Board Governance in the Era of AI",
+      description:
+        "Overseeing Innovation: Boardroom Strategies for the AI Age",
+      type: "session",
+      icon: Clock,
+      speaker: "Sh. Shekhar Chopra (Director PwC)",
+      location: "Main Auditorium",
+    },
+    {
+      time: "04:50 PM - 05:00 PM",
+      title: "Felicitation",
+      description:
+        "and Vote of Thanks",
+      type: "session",
+      icon: Clock,
+      speaker: "Ms. Bharti Sood (Regional Director PHDCCI)",
+      location: "Main Auditorium",
+    },
+  ];
 
   const getTypeColor = (type: string) => {
     switch (type) {
       case "keynote":
-        return "from-purple-500 to-indigo-600"
+        return "from-purple-500 to-indigo-600";
       case "session":
-        return "from-[#0088cc] to-blue-600"
+        return "from-[#0088cc] to-blue-600";
       case "panel":
-        return "from-green-500 to-emerald-600"
+        return "from-green-500 to-emerald-600";
       case "workshop":
-        return "from-orange-500 to-amber-600"
+        return "from-orange-500 to-amber-600";
       case "break":
-        return "from-gray-400 to-gray-500"
+        return "from-gray-400 to-gray-500";
       case "ceremony":
-        return "from-red-500 to-pink-600"
+        return "from-red-500 to-pink-600";
       default:
-        return "from-[#0088cc] to-blue-600"
+        return "from-[#0088cc] to-blue-600";
     }
-  }
+  };
 
   const getTypeLabel = (type: string) => {
     switch (type) {
       case "keynote":
-        return "Keynote"
+        return "Keynote";
       case "session":
-        return "Session"
+        return "Session";
       case "panel":
-        return "Panel"
+        return "Panel";
       case "workshop":
-        return "Workshop"
+        return "Workshop";
       case "break":
-        return "Break"
+        return "Break";
       case "ceremony":
-        return "Ceremony"
+        return "Ceremony";
       default:
-        return "Session"
+        return "Session";
     }
-  }
+  };
 
   return (
-    
-    <section className="w-full py-24 relative overflow-hidden bg-gradient-to-b from-white to-gray-50" id="agenda">
+    <section
+      className="w-full py-24 relative overflow-hidden bg-gradient-to-b from-white to-gray-50"
+      id="agenda"
+    >
       {/* Background Pattern */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-timeline-pattern opacity-5"></div>
@@ -173,11 +202,17 @@ export function AgendaSection() {
           animate={isInView ? "visible" : "hidden"}
           className="space-y-16"
         >
-          <motion.div variants={itemVariants} className="text-center max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Conference Agenda</h2>
+          <motion.div
+            variants={itemVariants}
+            className="text-center max-w-3xl mx-auto"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+              Conference Agenda
+            </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#0088cc] to-blue-400 mx-auto mb-6"></div>
             <p className="text-gray-600 text-lg">
-              A comprehensive day of learning, networking, and insights into the latest trends in cybersecurity and AI.
+              A comprehensive day of learning, networking, and insights into the
+              latest trends in cybersecurity and AI.
             </p>
           </motion.div>
 
@@ -201,7 +236,9 @@ export function AgendaSection() {
                   {/* Content Card */}
                   <div
                     className={`w-full md:w-5/12 ml-16 md:ml-0 ${
-                      index % 2 === 0 ? "md:mr-auto md:pr-8" : "md:ml-auto md:pl-8"
+                      index % 2 === 0
+                        ? "md:mr-auto md:pr-8"
+                        : "md:ml-auto md:pl-8"
                     }`}
                   >
                     <motion.div
@@ -210,24 +247,30 @@ export function AgendaSection() {
                     >
                       {/* Decorative gradient */}
                       <div
-                        className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${getTypeColor(item.type)}`}
+                        className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${getTypeColor(
+                          item.type
+                        )}`}
                       ></div>
 
                       {/* Type Badge */}
                       <div className="flex items-center justify-between mb-4">
                         <div
                           className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium text-white bg-gradient-to-r ${getTypeColor(
-                            item.type,
+                            item.type
                           )}`}
                         >
                           <item.icon className="w-3 h-3 mr-1" />
                           {getTypeLabel(item.type)}
                         </div>
-                        <div className="text-sm font-bold text-[#0088cc]">{item.time}</div>
+                        <div className="text-sm font-bold text-[#0088cc]">
+                          {item.time}
+                        </div>
                       </div>
 
                       {/* Content */}
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">
+                        {item.title}
+                      </h3>
                       <p className="text-gray-600 mb-4">{item.description}</p>
 
                       {/* Speaker & Location */}
@@ -250,7 +293,11 @@ export function AgendaSection() {
                   </div>
 
                   {/* Time Display for larger screens */}
-                  <div className={`hidden md:block w-2/12 ${index % 2 === 0 ? "text-right pr-8" : "text-left pl-8"}`}>
+                  <div
+                    className={`hidden md:block w-2/12 ${
+                      index % 2 === 0 ? "text-right pr-8" : "text-left pl-8"
+                    }`}
+                  >
                     {/* <div className="text-lg font-bold text-[#0088cc]">{item.time}</div> */}
                   </div>
                 </motion.div>
@@ -261,7 +308,9 @@ export function AgendaSection() {
           {/* Additional Info */}
           <motion.div variants={itemVariants} className="text-center mt-12">
             <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 max-w-3xl mx-auto">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Important Notes</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Important Notes
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700">
                 <div className="flex items-start">
                   <Clock className="w-4 h-4 text-[#0088cc] mr-2 mt-0.5" />
@@ -292,6 +341,5 @@ export function AgendaSection() {
         }
       `}</style>
     </section>
-    
-  )
+  );
 }

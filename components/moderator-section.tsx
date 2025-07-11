@@ -1,14 +1,14 @@
-"use client";
+"use client"
 
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
-import Image from "next/image";
-import { Brain, Lock, Scale, Zap, Network, Shield } from "lucide-react";
+import { motion } from "framer-motion"
+import { useInView } from "framer-motion"
+import { useRef } from "react"
+import Image from "next/image"
+import { Brain, Lock, Scale, Zap, Network, Shield } from "lucide-react"
 
-export function SpeakersSection() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.1 });
+export function ModeratorSection() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, amount: 0.1 })
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -18,7 +18,7 @@ export function SpeakersSection() {
         staggerChildren: 0.1,
       },
     },
-  };
+  }
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -32,94 +32,51 @@ export function SpeakersSection() {
         duration: 0.5,
       },
     },
-  };
+  }
 
   const speakers = [
+   
     {
-      name: "Ms. Geetanjali Khandelwal, IPS",
-      role: "SP- Cyber Crime, Chandigarh Police",
-      image:
-        "/geetanjali,IPS.jpg?height=400&width=300&text=Professional+Woman+Cybersecurity+Expert",
-      topic: "Cyber Law Enforcement: Strategy,",
-      icon: Brain,
-      color: "from-purple-500 to-blue-600",
+      name: "CS Rahul Jogi",
+      role: "Organizing Committee Member & Convener, Regional NCLT and Corporate Affairs Committee, PHDCCI",
+      image: "/Rahul-Jogi.png?height=400&width=300&text=Asian+Woman+Tech+Executive",
+      topic: "Cyber Law Enforcement: Strategy, Challenges, and Real-World Impact",
+      icon: Network,
+      color: "from-violet-500 to-purple-600",
     },
     {
-      name: "Sh. Deepak Saharan, IPS",
-      role: "SP- Cyber Crime Cell, Haryana Police",
-      image:
-        "/Deepak-Sharan-IPS.jpg?height=400&width=300&text=Indian+Police+Officer+Cybersecurity",
-      topic: "Cyber Law Enforcement: Strategy",
-    },
-    {
-      name: "Sh. Vinod Sharma",
-      role: "Regional Director Ministry of Corporate Affairs, North Region",
-      image:
-        "/Vinod-Sharma.png?height=400&width=300&text=African+Man+Cybersecurity+Director",
-      topic: "Inaugural Session",
-      icon: Zap,
-      color: "from-blue-500 to-indigo-600",
-    },
-    {
-      name: "Mr. Manish Trehan",
-      role: "Producer, Jamtara Web Series on Netflix",
-      image:
-        "/ManishTrehan-jamtara.png?height=400&width=300&text=Indian+Professor+Cybersecurity+Expert",
-      topic: "Fireside Chat: Reel to Real Behind The Scam",
-      icon: Lock,
-      color: "from-cyan-500 to-blue-600",
-    },
-    {
-      name: "Ms. Smiti Bhatt Deorah",
-      role: "Co-Founder & COO, AdvantageClub.ai",
-      image:
-        "/Smiti Bhatt.jpg?height=400&width=300&text=African+Man+Cybersecurity+Director",
+      name: "Mr. Kulbir Singh",
+      role: "Founder & CTO, DesignersX",
+      image: "/Kulbir-Singh.png?height=400&width=300&text=African+Man+Cybersecurity+Director",
       topic: "Scaling Smart with AI: How Businesses can Leverage AI for Growth",
       icon: Zap,
       color: "from-blue-500 to-indigo-600",
     },
     {
-      name: "Mr. Tarun Malhotra",
-      role: "Founder & MD, CyberCops",
-      image:
-        "/Tarun-Malhotra.jpg?height=400&width=300&text=Professional+Woman+AI+Researcher",
-      topic: "Cyber Threat Landscape: Trends, Tactics",
-      icon: Shield,
-      color: "from-indigo-500 to-purple-600",
+      name: "Mr. Amarpal Singh",
+      role: "Cyber Lead India, WTW ",
+      image: "/Amarpal-Singh.png?height=400&width=300&text=Asian+Woman+Tech+Executive",
+      topic: "DPDP Act 2023 in Action:  Compliance, Confusion & Consequences",
+      icon: Network,
+      color: "from-violet-500 to-purple-600",
     },
     {
-      name: "To be Announced",
-      role: "To be Announced",
-      image:"/Coming-Soon.jpg?height=400&width=300&text=African+Man+Cybersecurity+Director",
-      topic: "Panel Discussion",
-      icon: Zap,
-      color: "from-blue-500 to-indigo-600",
+      name: "Adv. Pooja Nayar",
+      role: "Founder & Principal Consultant,Pratham HR & Legal Consultants.",
+      image: "/Pooja-Nayar.png?height=400&width=300&text=Asian+Woman+Tech+Executive",
+      topic: "DPDP Act 2023 in Action: Compliance, Confusion & Consequences",
+      icon: Network,
+      color: "from-violet-500 to-purple-600",
     },
     {
-      name: "To be Announced",
-      role: "To be Announced",
-      image:"/Coming-Soon.jpg?height=400&width=300&text=African+Man+Cybersecurity+Director",
-      topic: "Panel Discussion",
-      icon: Zap,
-      color: "from-blue-500 to-indigo-600",
+          name: "To be Announced",
+          role: "To be Announced",
+          image: "/Coming-Soon.jpg?height=400&width=300&text=African+Man+Cybersecurity+Director",
+          topic: "Panel Discussion",
+          icon: Zap,
+          color: "from-blue-500 to-indigo-600",
     },
-    {
-      name: "To be Announced",
-      role: "To be Announced",
-      image:"/Coming-Soon.jpg?height=400&width=300&text=African+Man+Cybersecurity+Director",
-      topic: "Panel Discussion",
-      icon: Zap,
-      color: "from-blue-500 to-indigo-600",
-    },
-    {
-      name: "To be Announced",
-      role: "To be Announced",
-      image:"/Coming-Soon.jpg?height=400&width=300&text=African+Man+Cybersecurity+Director",
-      topic: "Panel Discussion",
-      icon: Zap,
-      color: "from-blue-500 to-indigo-600",
-    },
-  ];
+  ]
 
   return (
     <section className="w-full py-24 relative overflow-hidden" id="speakers">
@@ -139,17 +96,13 @@ export function SpeakersSection() {
           animate={isInView ? "visible" : "hidden"}
           className="space-y-16"
         >
-          <motion.div
-            variants={itemVariants}
-            className="text-center max-w-3xl mx-auto"
-          >
+          <motion.div variants={itemVariants} className="text-center max-w-3xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#0088cc] to-[#005580]">
-              Featured Speakers
+              Our Moderators
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#0088cc] to-[#005580] mx-auto mb-6"></div>
             <p className="text-gray-600 text-lg">
-              Learn from industry leaders and experts who are at the forefront
-              of cybersecurity and artificial intelligence.
+              Hear from voices that guide meaningful discussions in cybersecurity and AI.
             </p>
           </motion.div>
 
@@ -173,7 +126,7 @@ export function SpeakersSection() {
                   {/* Speaker image with gradient overlay */}
                   <div className="relative h-64 overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
-                    <Image
+                    <Image 
                       src={speaker.image || "/placeholder.svg"}
                       alt={speaker.name}
                       fill
@@ -188,22 +141,15 @@ export function SpeakersSection() {
                         >
                           <speaker.icon className="w-3.5 h-3.5 text-white" />
                         </div> */}
-                        <span className="text-xs font-medium truncate">
-                          {" "}
-                          {speaker.topic}
-                        </span>
+                        <span className="text-xs font-medium truncate"> {speaker.topic}</span>
                       </div>
                     </div>
                   </div>
 
                   {/* Speaker info */}
                   <div className="p-4">
-                    <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">
-                      {speaker.name}
-                    </h3>
-                    <p className="text-[#0088cc] dark:text-[#4db8ff] text-sm ">
-                      {speaker.role}
-                    </p>
+                    <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">{speaker.name}</h3>
+                    <p className="text-[#0088cc] dark:text-[#4db8ff] text-sm ">{speaker.role}</p>
 
                     {/* Animated button on hover */}
                     {/* <div className="overflow-hidden h-8">
@@ -223,9 +169,7 @@ export function SpeakersSection() {
           </motion.div>
 
           <motion.div variants={itemVariants} className="text-center mt-12">
-            <p className="text-gray-500 italic">
-              *Additional speakers to be announced soon
-            </p>
+            <p className="text-gray-500 italic">*Additional speakers to be announced soon</p>
           </motion.div>
         </motion.div>
       </div>
@@ -237,5 +181,5 @@ export function SpeakersSection() {
         }
       `}</style>
     </section>
-  );
+  )
 }

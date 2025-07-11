@@ -622,7 +622,7 @@ useEffect(() => {
           }}
         >
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/company/rca-conf/"
             target="_blank"
             rel="noopener noreferrer"
             className=" sm:flex  space-x-2 sm:space-x-1  items-center  text-white hover:text-[#0088cc] transition-colors "

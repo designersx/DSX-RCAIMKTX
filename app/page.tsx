@@ -7,6 +7,8 @@ import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { AgendaSection } from "@/components/agenda-section"
+import { ModeratorSection } from "@/components/moderator-section"
+
 
 
 export default function Home() {
@@ -16,9 +18,9 @@ export default function Home() {
 
       <AboutSection />
       <AgendaSection />
-
       <SpeakersSection />
-      <SponsorsSection />
+      <ModeratorSection/>      
+      <SponsorsSection />      
       <PricingSection />
       {/* <CTASection /> */}
       <Footer />
