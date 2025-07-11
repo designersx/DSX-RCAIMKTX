@@ -49,7 +49,7 @@ export function AgendaSection() {
       title: "Inaugural Session",
       description:
         "Opening Remarks, Welcome Address, Keynote Address, Address by Guest of Honor",
-      type: "session",
+      type: "keynote",
       icon: Award,
       speaker:
         "Ms. Bharti Sood (Regional Director PHDCCI), Sh. Tarun Malhotra (Convener Regional Cyber Security and AI Committee PHDCCI), Sh. Vinod Sharma (Regional Director Northern Region Ministry of Corporate Affairs Government of India), Sh. Shailendra Tyagi (Director Software Technology Parks of India Ministry of Electronics and Information Technology Government of India), Sh. Rakesh Kumar, IPS* (CEO Indian Cybercrime Coordination Centre (I4C) Ministry of Home Affairs Government of India), CS Rahul Jogi (Convener Regional NCLT and Corporate Affairs Committee PHDCCI) ",
@@ -57,9 +57,9 @@ export function AgendaSection() {
     },
     {
       time: "12:00 AM - 12:45 PM",
-      title: "Session 2- DPDP Act 2023 in Action:",
+      title: "DPDP Act 2023 in Action:",
       description: "Compliance, Confusion &amp; Consequences",
-      type: "keynote",
+      type: "session",
       icon: Award,
       speaker:
         "Ms. Debashree Mukherjee (Associate Director PwC), Sh. Bharat Chugh* (Former Judge)",
@@ -67,9 +67,9 @@ export function AgendaSection() {
     },
     {
       time: "12:45 PM - 01:30 PM",
-      title: "Session 3- Scaling Smart with AI:",
+      title: "Scaling Smart with AI:",
       description: "How Businesses can leverage AI for Growth",
-      type: "keynote",
+      type: "session",
       icon: Clock,
       speaker:
         "Ms. Smiti Bhatt (Founder Advantage Club AI), Ms. Isha Rani (Head of Engineering Microsoft)",
@@ -79,7 +79,7 @@ export function AgendaSection() {
       time: "01:30 PM - 02:00 PM",
       title: "Workshop on Cyber Threat Landscape:",
       description: "Trends, Tactics Safeguard Against Cybercrime and Attacks",
-      type: "session",
+      type: "panel",
       icon: Award,
       speaker:
         "Sh. Tarun Malhotra (Convener Regional Cyber Security and AI Committee PHDCCI)",
@@ -107,7 +107,7 @@ export function AgendaSection() {
       time: "03:00 PM - 04:00 PM",
       title: "Cyber Law Enforcement:",
       description: "Strategy, Challenges, and Real-World Impact",
-      type: "panel",
+      type: "session",
       icon: Users,
       speaker:
         "Ms. Geetanjali Khandelwal, IPS (SP- Cyber Crime Cell Chandigarh Police), Sh. Jashandeep Singh Gill, PPS (SP- Cyber Crime Cell Punjab Police), Sh. Deepak Saharan, IPS (SP-Cyber Crime Cell Haryana Police)",
@@ -134,10 +134,9 @@ export function AgendaSection() {
     },
     {
       time: "04:50 PM - 05:00 PM",
-      title: "Felicitation",
-      description:
-        "and Vote of Thanks",
-      type: "session",
+      title: "Felicitation and Vote of Thanks",
+      description:"Thanking the Minds and Hands Behind a Memorable Event",
+      type: "ceremony",
       icon: Clock,
       speaker: "Ms. Bharti Sood (Regional Director PHDCCI)",
       location: "Main Auditorium",
