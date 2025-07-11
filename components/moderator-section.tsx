@@ -38,7 +38,7 @@ export function ModeratorSection() {
    
     {
       name: "CS Rahul Jogi",
-      role: "Organizing Committee Member & Convener, Regional NCLT and Corporate Affairs Committee, PHDCCI",
+      role: "Convener, Regional NCLT and Corporate Affairs Committee, PHDCCI",
       image: "/Rahul-Jogi.png?height=400&width=300&text=Asian+Woman+Tech+Executive",
       topic: "Cyber Law Enforcement: Strategy, Challenges, and Real-World Impact",
       icon: Network,
@@ -169,7 +169,7 @@ export function ModeratorSection() {
           </motion.div>
 
           <motion.div variants={itemVariants} className="text-center mt-12">
-            <p className="text-gray-500 italic">*Additional speakers to be announced soon</p>
+            <p className="text-gray-500 italic">*Additional Moderators to be announced soon</p>
           </motion.div>
         </motion.div>
       </div>
