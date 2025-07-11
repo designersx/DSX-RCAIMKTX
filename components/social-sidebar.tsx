@@ -14,7 +14,7 @@ export function SocialSidebar() {
       <div className="bg-white py-6 px-3 rounded-r-lg shadow-lg">
         <div className="flex flex-col items-center space-y-6">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/company/rca-conf/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-800 hover:text-[#0088cc] transition-colors"

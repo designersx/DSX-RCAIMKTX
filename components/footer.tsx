@@ -22,7 +22,7 @@ export function Footer() {
             </p>
             <div className="flex pt-2 md:hidden">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/rca-conf/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" widthLInkDi text-gray-400 hover:text-[#0088cc] transition-colors"
