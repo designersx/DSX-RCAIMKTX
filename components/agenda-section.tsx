@@ -79,7 +79,7 @@ export function AgendaSection() {
       time: "01:30 PM - 02:00 PM",
       title: "Workshop on Cyber Threat Landscape:",
       description: "Trends, Tactics Safeguard Against Cybercrime and Attacks",
-      type: "panel",
+      type: "session",
       icon: Award,
       speaker:
         "Sh. Tarun Malhotra (Convener Regional Cyber Security and AI Committee PHDCCI)",

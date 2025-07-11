@@ -36,22 +36,6 @@ export function SpeakersSection() {
 
   const speakers = [
     {
-      name: "Ms. Geetanjali Khandelwal, IPS",
-      role: "SP- Cyber Crime, Chandigarh Police",
-      image:
-        "/geetanjali,IPS.jpg?height=400&width=300&text=Professional+Woman+Cybersecurity+Expert",
-      topic: "Cyber Law Enforcement: Strategy,",
-      icon: Brain,
-      color: "from-purple-500 to-blue-600",
-    },
-    {
-      name: "Sh. Deepak Saharan, IPS",
-      role: "SP- Cyber Crime Cell, Haryana Police",
-      image:
-        "/Deepak-Sharan-IPS.jpg?height=400&width=300&text=Indian+Police+Officer+Cybersecurity",
-      topic: "Cyber Law Enforcement: Strategy",
-    },
-    {
       name: "Sh. Vinod Sharma",
       role: "Regional Director Ministry of Corporate Affairs, North Region",
       image:
@@ -60,6 +44,40 @@ export function SpeakersSection() {
       icon: Zap,
       color: "from-blue-500 to-indigo-600",
     },
+    {
+      name: "Sh. Deepak Saharan, IPS",
+      role: "SP- Cyber Crime Cell, Haryana Police",
+      image:
+        "/Deepak-Sharan-IPS.jpg?height=400&width=300&text=Indian+Police+Officer+Cybersecurity",
+      topic: "Cyber Law Enforcement: Strategy",
+    },   
+    {
+      name: "Ms. Geetanjali Khandelwal, IPS",
+      role: "SP- Cyber Crime, Chandigarh Police",
+      image:
+        "/geetanjali,IPS.jpg?height=400&width=300&text=Professional+Woman+Cybersecurity+Expert",
+      topic: "Cyber Law Enforcement: Strategy",
+      icon: Brain,
+      color: "from-purple-500 to-blue-600",
+    },
+    {
+      name: "Sh. Jashandeep Singh Gill, PPS",
+      role: "SP- Cyber Crime Cell Punjab Police",
+      image:
+        "/Jashandeep.png?height=400&width=300&text=Indian+Professor+Cybersecurity+Expert",
+      topic: "Cyber Law Enforcement: Strategy",
+      icon: Lock,
+      color: "from-cyan-500 to-blue-600",
+    },
+    {
+      name: "Mr. Tarun Malhotra",
+      role: "Founder & MD, CyberCops",
+      image:
+        "/Tarun-Malhotra.jpg?height=400&width=300&text=Professional+Woman+AI+Researcher",
+      topic: "Cyber Threat Landscape: Trends, Tactics",
+      icon: Shield,
+      color: "from-indigo-500 to-purple-600",
+    },     
     {
       name: "Mr. Manish Trehan",
       role: "Producer, Jamtara Web Series on Netflix",
@@ -77,16 +95,7 @@ export function SpeakersSection() {
       topic: "Scaling Smart with AI: How Businesses can Leverage AI for Growth",
       icon: Zap,
       color: "from-blue-500 to-indigo-600",
-    },
-    {
-      name: "Mr. Tarun Malhotra",
-      role: "Founder & MD, CyberCops",
-      image:
-        "/Tarun-Malhotra.jpg?height=400&width=300&text=Professional+Woman+AI+Researcher",
-      topic: "Cyber Threat Landscape: Trends, Tactics",
-      icon: Shield,
-      color: "from-indigo-500 to-purple-600",
-    },
+    },    
     {
       name: "To be Announced",
       role: "To be Announced",
@@ -111,14 +120,7 @@ export function SpeakersSection() {
       icon: Zap,
       color: "from-blue-500 to-indigo-600",
     },
-    {
-      name: "To be Announced",
-      role: "To be Announced",
-      image:"/Coming-Soon.jpg?height=400&width=300&text=African+Man+Cybersecurity+Director",
-      topic: "Panel Discussion",
-      icon: Zap,
-      color: "from-blue-500 to-indigo-600",
-    },
+    
   ];
 
   return (
