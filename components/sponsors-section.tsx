@@ -33,48 +33,48 @@ export function SponsorsSection() {
     },
     {
       name: "Punjab Police",
-      image: "/Punjab-Police.png?height=100&width=200&text=Punjab+Police+Logo&bg=1a365d&color=white",
+      image: "/Punjab-Police2.png?height=100&width=200&text=Punjab+Police+Logo&bg=1a365d&color=white",
       size: "medium",
     },
     {
       name: "Chandigarh Police",
-      image: "/Chandigarh-Police.png?height=100&width=200&text=CyberSecure+Solutions&bg=0088cc&color=white",
+      image: "/Chandigarh-Police2.png?height=100&width=200&text=CyberSecure+Solutions&bg=0088cc&color=white",
       size: "medium",
     },
     {
       name: "STPI",
-      image: "/STPI.png?height=100&width=200&text=AI+Defense+Systems&bg=4169E1&color=white",
+      image: "/STPI2.png?height=100&width=200&text=AI+Defense+Systems&bg=4169E1&color=white",
       size: "small",
     },
     
     {
       name: "Haryana Police",
-      image: "/H-Police.png?height=100&width=200&text=AI+Innovations&bg=5b21b6&color=white",
+      image: "/H-Police2.png?height=100&width=200&text=AI+Innovations&bg=5b21b6&color=white",
       size: "medium",
     },
     {
       name: "Unified Voice Communication",
-      image: "/Unified-Voice.png?height=100&width=200&text=DataFortress&bg=7c3aed&color=white",
+      image: "/Unified-Voice2.png?height=100&width=200&text=DataFortress&bg=7c3aed&color=white",
       size: "meduim",
     },
     {
       name: "Qubify",
-      image: "/Qubify-Blue.png?height=100&width=200&text=CyberGuard+Pro&bg=8b5cf6&color=white",
+      image: "/Qubify-Blue2.png?height=100&width=200&text=CyberGuard+Pro&bg=8b5cf6&color=white",
       size: "medium",
     },
     {
       name: "Cyber Crop",
-      image: "/CyberCrop.png?height=100&width=200&text=Digital+Guardian&bg=1e40af&color=white",
+      image: "/CyberCrop2.png?height=100&width=200&text=Digital+Guardian&bg=1e40af&color=white",
       size: "medium",
     },
     {
       name: "DesignersX",
-      image: "/DesignersXL.png?height=100&width=200&text=SecureNet+Tech&bg=2563eb&color=white",
+      image: "/DesignersXL2.png?height=100&width=200&text=SecureNet+Tech&bg=2563eb&color=white",
       size: "medium",
     },
     {
       name: "Rozana",
-      image: "/RozanaL.png?height=100&width=200&text=ThreatShield&bg=3730a3&color=white",
+      image: "/RozanaL2.png?height=100&width=200&text=ThreatShield&bg=3730a3&color=white",
       size: "small",
     },
     
