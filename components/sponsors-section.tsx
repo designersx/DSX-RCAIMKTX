@@ -46,21 +46,7 @@ export function SponsorsSection() {
       image: "/STPI.png?height=100&width=200&text=AI+Defense+Systems&bg=4169E1&color=white",
       size: "small",
     },
-    {
-      name: "DesignersX",
-      image: "/DesignersXL.png?height=100&width=200&text=SecureNet+Tech&bg=2563eb&color=white",
-      size: "medium",
-    },
-    {
-      name: "Cyber Crop",
-      image: "/CyberCrop.png?height=100&width=200&text=Digital+Guardian&bg=1e40af&color=white",
-      size: "medium",
-    },
-    {
-      name: "Rozana",
-      image: "/RozanaL.png?height=100&width=200&text=ThreatShield&bg=3730a3&color=white",
-      size: "small",
-    },
+    
     {
       name: "Haryana Police",
       image: "/H-Police.png?height=100&width=200&text=AI+Innovations&bg=5b21b6&color=white",
@@ -76,6 +62,23 @@ export function SponsorsSection() {
       image: "/Qubify-Blue.png?height=100&width=200&text=CyberGuard+Pro&bg=8b5cf6&color=white",
       size: "medium",
     },
+    {
+      name: "Cyber Crop",
+      image: "/CyberCrop.png?height=100&width=200&text=Digital+Guardian&bg=1e40af&color=white",
+      size: "medium",
+    },
+    {
+      name: "DesignersX",
+      image: "/DesignersXL.png?height=100&width=200&text=SecureNet+Tech&bg=2563eb&color=white",
+      size: "medium",
+    },
+    {
+      name: "Rozana",
+      image: "/RozanaL.png?height=100&width=200&text=ThreatShield&bg=3730a3&color=white",
+      size: "small",
+    },
+    
+   
   ]
 
   return (
